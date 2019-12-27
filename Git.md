@@ -32,53 +32,53 @@ Initialized empty Git repository in C:/Users/HPE/Desktop/TIL/.git/
 
 * working directory(작업 공간)에서 staging area로 해당 파일을 이동시키기 위해서는 아래의 명령어를 사용한다.
 
-```bash
-$ git add markdown.md # 특정 파일
-$ git add images/ # 특정 폴더
-$ git add . # 현재 디렉토리
-```
+    ```bash
+    $ git add markdown.md # 특정 파일
+    $ git add images/ # 특정 폴더
+    $ git add . # 현재 디렉토리
+    ```
 
-  * add 전 상태
+      * add 전 상태
 
-```bash
-$ git status
-On branch master
+    ```bash
+    $ git status
+    On branch master
 
-No commits yet
-# 트래킹이 되지 않고 있는 파일들
-# => commit 이력에 한번도 저장되지 않는 파일들, 즉 새로 생성된 파일들.
+    No commits yet
+    # 트래킹이 되지 않고 있는 파일들
+    # => commit 이력에 한번도 저장되지 않는 파일들, 즉 새로 생성된 파일들.
 
-Untracked files:
-# 커밋이 될 것들에 포함시키기 위해서는 add
-# => staging area에 담으려면 add
-  (use "git add <file>..." to include in what will be committed)
-        Git.md
-        images/
-        markdown.md
+    Untracked files:
+    # 커밋이 될 것들에 포함시키기 위해서는 add
+    # => staging area에 담으려면 add
+      (use "git add <file>..." to include in what will be committed)
+            Git.md
+            images/
+            markdown.md
 
-nothing added to commit but untracked files present (use "git add" to track)
-```
+    nothing added to commit but untracked files present (use "git add" to track)
+    ```
 
   * add 후 상태
 
-```bash
-$ git status
-On branch master
+    ```bash
+    $ git status
+    On branch master
 
-No commits yet
-# 커밋 될 변경사항들
-# => staging area에 있는 파일들
+    No commits yet
+    # 커밋 될 변경사항들
+    # => staging area에 있는 파일들
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   markdown.md
-# working directory에 있는 파일들
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        Git.md
-        images/
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   markdown.md
+    # working directory에 있는 파일들
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            Git.md
+            images/
 
-```
+    ```
 
 ### 3. commit
 
